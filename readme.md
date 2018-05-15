@@ -7,4 +7,4 @@ This project assumes you have a version of Sql Server you can connect to and cre
 I have tested it with localdb `Microsoft SQL Server 2014 (12.0.2000.8)`.
 
 ## Getting started
-To get started, set your connection string in the `connectionString` variable at the top of the `Program.cs` file and hit `Start Debugging.
+To get started, set your connection string in the `connectionString` variable at the top of the `Program.cs` file and hit `Start Debugging`.

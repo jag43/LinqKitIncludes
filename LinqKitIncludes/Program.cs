@@ -14,8 +14,12 @@ namespace LinqKitIncludes
         {
             // change your connection string here
             // WARNING: be careful what database you specify here because running the app will delete and recreate the database.
+            // Default value can probably be @"Server=(localdb)\MSSQLLocalDB;Database=LinqKitIncludes"
             const string connectionString =
-                @"Server=(localdb)\MSSQLLocalDB;Database=LinqKitIncludes";
+                @"";
+
+            if (string.IsNullOrWhiteSpace(connectionString))
+                throw new Exception("No connection string set. Please set a connection string.");
 
             var f = new ContextFactory(connectionString);
 

@@ -13,6 +13,7 @@ namespace LinqKitIncludes
         static void Main(string[] args)
         {
             // change your connection string here
+            // WARNING: be careful what database you specify here because running the app will delete and recreate the database.
             const string connectionString =
                 @"Server=(localdb)\MSSQLLocalDB;Database=LinqKitIncludes";
 
